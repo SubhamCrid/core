@@ -2,10 +2,10 @@ services:
     cinepro-core:
         build: .
         ports:
-            - '3000:3000'
+            - '8321:8321'
         environment:
             - HOST=0.0.0.0
-            - PORT=3000
+            - PORT=8321
             - NODE_ENV=production
             - TMDB_API_KEY=${TMDB_API_KEY}
             - TMDB_CACHE_TTL=86400
